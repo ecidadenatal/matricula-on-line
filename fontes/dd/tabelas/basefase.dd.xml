@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="yes" ?>
+<table name="plugins.basefase" description="Tabela de vínculo entra a Base (mobase = matricula do aluno) e a Fase (período de matríula)" type="0">
+  <fields>
+    <field name="mo12_codigo"
+           conteudo="int4"
+           description="Sequencial"
+           inivalue="0"
+           label="Sequencial"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Sequencial"
+           reference=""
+           ispk="t"
+           hassequence="t">
+      <sequence name="plugins.basefase_mo12_codigo_seq" ></sequence>
+    </field>
+    <field name="mo12_base"
+           conteudo="int4"
+           description="Base que a fase está vinculada."
+           inivalue="0"
+           label="Base"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Base"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo12_fase"
+           conteudo="int4"
+           description="Fase"
+           inivalue="0"
+           label="Fase"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Fase"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo12_status"
+           conteudo="bool"
+           description="Status do vínculo entra a Base e a Fase."
+           inivalue="0"
+           label="Status"
+           size="1"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="5"
+           tipoobj="text"
+           labelrel="Status"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+  </fields>
+  <primarykey>
+    <fieldpk  name="mo03_codigo"></fieldpk>
+  </primarykey>
+  <foreignkeys>
+    <foreignkey reference="plugins.mobase" inner='true'>
+      <fieldfk name="mo12_base" reference="mo01_codigo" />
+    </foreignkey>
+    <foreignkey reference="plugins.fase" inner='true'>
+      <fieldfk name="mo12_fase" reference="mo04_codigo" />
+    </foreignkey>
+  </foreignkeys>
+</table>

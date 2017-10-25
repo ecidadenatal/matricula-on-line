@@ -1,0 +1,17 @@
+drop table if exists plugins.criteriosdesignacaoensino cascade;
+drop table if exists plugins.criteriosdesignacao cascade;
+drop table if exists plugins.alocados cascade;
+drop table if exists plugins.baseescturno cascade;
+drop table if exists plugins.baseescola cascade;
+drop table if exists plugins.basenecess cascade;
+drop table if exists plugins.basefase cascade;
+drop table if exists plugins.mobase cascade;
+drop table if exists plugins.escbairro cascade;
+drop table if exists plugins.estcivil cascade;
+drop table if exists plugins.idadeetapa cascade;
+drop table if exists plugins.redeorigem cascade;
+drop table if exists plugins.tiporesp cascade;
+drop table if exists plugins.vagas cascade;
+drop table if exists plugins.ciclosensino cascade;
+drop table if exists plugins.fase cascade;
+drop table if exists plugins.ciclos cascade;

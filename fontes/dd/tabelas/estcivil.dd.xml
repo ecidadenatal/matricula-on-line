@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes" ?>
+<table name="plugins.estcivil" description="Estado Civil" type="0">
+  <fields>
+    <field name="mo07_codigo"
+           conteudo="int4"
+           description="Código"
+           inivalue="0"
+           label="Código"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Código"
+           reference=""
+           ispk="t"
+           hassequence="t">
+      <sequence name="plugins.estcivil_mo07_codigo_seq" ></sequence>
+    </field>
+    <field name="mo07_descr"
+           conteudo="varchar(50)"
+           description="Decrição"
+           inivalue="0"
+           label="Decrição"
+           size="50"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="2"
+           tipoobj="text"
+           labelrel="Decrição"
+           reference=""
+           ispk=""
+           hassequence="f">
+    </field>
+  </fields>
+  <primarykey>
+    <fieldpk name="mo07_codigo"></fieldpk>
+  </primarykey>
+</table>

@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes" ?>
+<table name="plugins.redeorigem" description="Rede de Origem" type="0">
+  <fields>
+    <field name="mo05_codigo"
+           conteudo="int4"
+           description="Sequencial"
+           inivalue="0"
+           label="Sequencial"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Sequencial"
+           reference=""
+           ispk="t"
+           hassequence="t">
+      <sequence name="plugins.redeorigem_mo05_codigo_seq" ></sequence>
+    </field>
+    <field name="mo05_descr"
+           conteudo="varchar(100)"
+           description="Descrição"
+           inivalue="0"
+           label="Descrição"
+           size="100"
+           null="t"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="3"
+           tipoobj="text"
+           labelrel="Descrição"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+  </fields>
+  <primarykey>
+    <fieldpk  name="mo05_codigo"></fieldpk>
+  </primarykey>
+</table>

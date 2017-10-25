@@ -1,0 +1,78 @@
+<?xml version="1.0" standalone="yes" ?>
+<table name="plugins.idadeetapa" description="Lista de etapas e suas idades" type="0">
+  <fields>
+    <field name="mo15_sequencial"
+           conteudo="int4"
+           description="Sequencial"
+           inivalue="0"
+           label="Sequencial"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Sequencial"
+           reference=""
+           ispk="t"
+           hassequence="t">
+      <sequence name="plugins.idadeetapa_mo15_sequencial_seq" ></sequence>
+    </field>
+    <field name="mo15_etapa"
+           conteudo="int4"
+           description="Etapa"
+           inivalue="0"
+           label="Etapa"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Etapa"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo15_idadeinicial"
+           conteudo="varchar(100)"
+           description="Idade Inicial"
+           inivalue="0"
+           label="Idade Inicial"
+           size="100"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="3"
+           tipoobj="text"
+           labelrel="Idade Inicial"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo15_idadefinal"
+           conteudo="varchar(100)"
+           description="Idade Final"
+           inivalue="0"
+           label="Idade Final"
+           size="100"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="3"
+           tipoobj="text"
+           labelrel="Idade Final"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+  </fields>
+  <primarykey>
+    <fieldpk  name="mo15_sequencial"></fieldpk>
+  </primarykey>
+  <foreignkeys>
+    <foreignkey reference="serie" inner='true'>
+      <fieldfk name="mo15_etapa" reference="ed11_i_codigo" />
+    </foreignkey>
+  </foreignkeys>
+</table>

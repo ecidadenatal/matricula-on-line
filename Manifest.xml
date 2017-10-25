@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <plugin name="matricula-on-line" label="Matrícula On-line" plugin-version="1.0" ecidade-version="2.3.44">
+    <files>
+
+      <!-- Programas -->
+      <file name="mol1_ciclos001.php"                     path="/mol1_ciclos001.php"/>
+      <file name="mol1_ciclos002.php"                     path="/mol1_ciclos002.php"/>
+      <file name="mol1_ciclos003.php"                     path="/mol1_ciclos003.php"/>
+      <file name="mol1_fase001.php"                       path="/mol1_fase001.php"/>
+      <file name="mol1_fase002.php"                       path="/mol1_fase002.php"/>
+      <file name="mol1_fase003.php"                       path="/mol1_fase003.php"/>
+      <file name="mol1_vagas001.php"                      path="/mol1_vagas001.php"/>
+      <file name="mol1_idadeetapa001.php"                 path="/mol1_idadeetapa001.php"/>
+      <file name="mol1_escolaporbairro001.php"            path="/mol1_escolaporbairro001.php"/>
+      <file name="mol2_designados001.php"                 path="/mol2_designados001.php"/>
+      <file name="mol2_naodesignados001.php"              path="/mol2_naodesignados001.php"/>
+      <file name="mol2_naodesignados002.php"              path="/mol2_naodesignados002.php"/>
+      <file name="mol2_inscritos001.php"                  path="/mol2_inscritos001.php"/>
+      <file name="mol3_ordenarcriteriosdesignacao001.php" path="/mol3_ordenarcriteriosdesignacao001.php"/>
+      <file name="mol3_processardesignacao001.php"        path="/mol3_processardesignacao001.php"/>
+      <file name="mol2_designados002.php"                 path="/mol2_designados002.php"/>
+      <file name="mol2_inscritos002.php"                  path="/mol2_inscritos002.php"/>
+      <file name="mol4_processardesignacao.RPC.php"       path="/mol4_processardesignacao.RPC.php"/>
+
+      <!-- Formulários -->
+      <file name="db_frmciclos.php" path="/forms/db_frmciclos.php"/>
+      <file name="db_frmfase.php"    path="/forms/db_frmfase.php"/>
+
+      <!-- Funções de Pesquisa -->
+      <file name="func_ciclos.php"                path="/func_ciclos.php"/>
+      <file name="func_fase.php"                  path="/func_fase.php"/>
+      <file name="func_escbairro.php"             path="/func_escbairro.php"/>
+      <file name="func_escolamatriculaonline.php" path="/func_escolamatriculaonline.php"/>
+      <file name="func_etapamatriculaonline.php"  path="/func_etapamatriculaonline.php"/>
+      <file name="func_fase.php"          path="/func_fase.php"/>
+      <file name="func_faseencerrada.php" path="/func_faseencerrada.php"/>
+
+      <!-- Campos Funções de Pesquisa -->
+      <file name="db_func_fase.php"   path="/funcoes/db_func_fase.php"/>
+
+      <!-- RPC -->
+      <file name="mol4_ciclos.RPC.php"       path="/mol4_ciclos.RPC.php"/>
+      <file name="mol1_idadeetapa.RPC.php"   path="/mol1_idadeetapa.RPC.php"/>
+      <file name="mol4_escolabairro.RPC.php" path="/mol4_escolabairro.RPC.php"/>
+      <file name="mol4_vagas.RPC.php"        path="/mol4_vagas.RPC.php"/>
+      <file name="mol4_fase.RPC.php"         path="/mol4_fase.RPC.php"/>
+      <file name="mol4_ordenarcriteriosdesignacao.RPC.php"  path="/mol4_ordenarcriteriosdesignacao.RPC.php"/>
+
+      <!-- Mensagens -->
+      <file name="Ciclo.json"                               path="/mensagens/educacao/matriculaonline/Ciclo.json"/>
+      <file name="CriterioDesignacaoEnsino.json"            path="/mensagens/educacao/matriculaonline/CriterioDesignacaoEnsino.json"/>
+      <file name="db_frmciclos.json"                        path="/mensagens/educacao/matriculaonline/db_frmciclos.json"/>
+      <file name="Fase.json"                                path="/mensagens/educacao/matriculaonline/Fase.json"/>
+      <file name="mol4_ciclos_RPC.json"                     path="/mensagens/educacao/matriculaonline/mol4_ciclos_RPC.json"/>
+      <file name="mol1_escolaporbairro001.json"             path="/mensagens/educacao/matriculaonline/mol1_escolaporbairro001.json"/>
+      <file name="mol1_idadeetapa001.json"                  path="/mensagens/educacao/matriculaonline/mol1_idadeetapa001.json"/>
+      <file name="IdadeEtapa.json"                          path="/mensagens/educacao/matriculaonline/IdadeEtapa.json"/>
+      <file name="mol1_idadeetapa_RPC.json"                 path="/mensagens/educacao/matriculaonline/mol1_idadeetapa_RPC.json"/>
+      <file name="mol4_escolabairro_RPC.json"               path="/mensagens/educacao/matriculaonline/mol4_escolabairro_RPC.json"/>
+      <file name="mol1_vagas001.json"                       path="/mensagens/educacao/matriculaonline/mol1_vagas001.json"/>
+      <file name="mol2_designados001.json"                  path="/mensagens/educacao/matriculaonline/mol2_designados001.json"/>
+      <file name="mol2_designados002.json"                  path="/mensagens/educacao/matriculaonline/mol2_designados002.json"/>
+      <file name="func_etapamatriculaonline.json"           path="/mensagens/educacao/matriculaonline/func_etapamatriculaonline.json"/>
+      <file name="mol2_inscritos001.json"                   path="/mensagens/educacao/matriculaonline/mol2_inscritos001.json"/>
+      <file name="mol2_inscritos002.json"                   path="/mensagens/educacao/matriculaonline/mol2_inscritos002.json"/>
+      <file name="mol2_naodesignados001.json"               path="/mensagens/educacao/matriculaonline/mol2_naodesignados001.json"/>
+      <file name="mol2_naodesignados002.json"               path="/mensagens/educacao/matriculaonline/mol2_naodesignados002.json"/>
+      <file name="mol3_ordenarcriteriosdesignacao001.json"  path="/mensagens/educacao/matriculaonline/mol3_ordenarcriteriosdesignacao001.json"/>
+      <file name="mol4_ordenarcriteriosdesignacaoRPC.json"  path="/mensagens/educacao/matriculaonline/mol4_ordenarcriteriosdesignacaoRPC.json"/>
+      <file name="db_frmbase.json"                          path="/mensagens/educacao/matriculaonline/db_frmbase.json"/>
+      <file name="mol3_processardesignacao001.json"         path="/mensagens/educacao/matriculaonline/mol3_processardesignacao001.json"/>
+      <file name="mol4_fase_RPC.json"                       path="/mensagens/educacao/matriculaonline/mol4_fase_RPC.json"/>
+      <file name="mol4_processardesignacaoRPC.json"         path="/mensagens/educacao/matriculaonline/mol4_processardesignacaoRPC.json"/>
+
+      <!-- Models -->
+      <file name="CriterioBolsaFamilia.model.php"           path="/model/educacao/matriculaonline/criterios/CriterioBolsaFamilia.model.php"/>
+      <file name="CriterioDeficiencia.model.php"            path="/model/educacao/matriculaonline/criterios/CriterioDeficiencia.model.php"/>
+      <file name="CriterioDesignacaoRegra.model.php"        path="/model/educacao/matriculaonline/criterios/CriterioDesignacaoRegra.model.php"/>
+      <file name="CriterioIdadeMaior.model.php"             path="/model/educacao/matriculaonline/criterios/CriterioIdadeMaior.model.php"/>
+      <file name="CriterioIdadeMenor.model.php"             path="/model/educacao/matriculaonline/criterios/CriterioIdadeMenor.model.php"/>
+      <file name="CriterioRedeOrigem.model.php"             path="/model/educacao/matriculaonline/criterios/CriterioRedeOrigem.model.php"/>
+      <file name="CriterioResponsavelTrabalhador.model.php" path="/model/educacao/matriculaonline/criterios/CriterioResponsavelTrabalhador.model.php"/>
+      <file name="Ciclo.model.php"                          path="/model/educacao/matriculaonline/Ciclo.model.php"/>
+      <file name="CriterioDesignacaoEnsino.model.php"       path="/model/educacao/matriculaonline/CriterioDesignacaoEnsino.model.php"/>
+      <file name="Fase.model.php"                           path="/model/educacao/matriculaonline/Fase.model.php"/>
+      <file name="TipoCriterioDesignacao.model.php"         path="/model/educacao/matriculaonline/TipoCriterioDesignacao.model.php"/>
+      <file name="IdadeEtapa.model.php"                     path="/model/educacao/matriculaonline/IdadeEtapa.model.php"/>
+      <file name="Vagas.model.php"                          path="/model/educacao/matriculaonline/Vagas.model.php"/>
+      <file name="VagasRepository.model.php"                path="/model/educacao/matriculaonline/VagasRepository.model.php"/>
+
+      <!-- Scripts -->
+      <file name="DBFuncoesRelatoriosEtapaEscola.js" path="/scripts/classes/educacao/matriculaonline/DBFuncoesRelatoriosEtapaEscola.js"/>
+      <!-- Tabelas -->
+      <file name="alocados.dd.xml"                  path="/dd/tabelas/alocados.dd.xml"/>
+      <file name="baseescola.dd.xml"                path="/dd/tabelas/baseescola.dd.xml"/>
+      <file name="baseescturno.dd.xml"              path="/dd/tabelas/baseescturno.dd.xml"/>
+      <file name="basefase.dd.xml"                  path="/dd/tabelas/basefase.dd.xml"/>
+      <file name="basenecess.dd.xml"                path="/dd/tabelas/basenecess.dd.xml"/>
+      <file name="ciclos.dd.xml"                    path="/dd/tabelas/ciclos.dd.xml"/>
+      <file name="ciclosensino.dd.xml"              path="/dd/tabelas/ciclosensino.dd.xml"/>
+      <file name="criteriosdesignacao.dd.xml"       path="/dd/tabelas/criteriosdesignacao.dd.xml"/>
+      <file name="criteriosdesignacaoensino.dd.xml" path="/dd/tabelas/criteriosdesignacaoensino.dd.xml"/>
+      <file name="escbairro.dd.xml"                 path="/dd/tabelas/escbairro.dd.xml"/>
+      <file name="estcivil.dd.xml"                  path="/dd/tabelas/estcivil.dd.xml"/>
+      <file name="fase.dd.xml"                      path="/dd/tabelas/fase.dd.xml"/>
+      <file name="idadeetapa.dd.xml"                path="/dd/tabelas/idadeetapa.dd.xml"/>
+      <file name="mobase.dd.xml"                    path="/dd/tabelas/mobase.dd.xml"/>
+      <file name="redeorigem.dd.xml"                path="/dd/tabelas/redeorigem.dd.xml"/>
+      <file name="tiporesp.dd.xml"                  path="/dd/tabelas/tiporesp.dd.xml"/>
+      <file name="vagas.dd.xml"                     path="/dd/tabelas/vagas.dd.xml"/>
+
+      <!-- Classes -->
+      <file name="db_criteriosdesignacao_classe.php"       path="/classes/db_criteriosdesignacao_classe.php"/>
+      <file name="db_baseescturno_classe.php"              path="/classes/db_baseescturno_classe.php"/>
+      <file name="db_alocados_classe.php"                  path="/classes/db_alocados_classe.php"/>
+      <file name="db_fase_classe.php"                      path="/classes/db_fase_classe.php"/>
+      <file name="db_escbairro_classe.php"                 path="/classes/db_escbairro_classe.php"/>
+      <file name="db_ciclosensino_classe.php"              path="/classes/db_ciclosensino_classe.php"/>
+      <file name="db_estcivil_classe.php"                  path="/classes/db_estcivil_classe.php"/>
+      <file name="db_basenecess_classe.php"                path="/classes/db_basenecess_classe.php"/>
+      <file name="db_criteriosdesignacaoensino_classe.php" path="/classes/db_criteriosdesignacaoensino_classe.php"/>
+      <file name="db_baseescola_classe.php"                path="/classes/db_baseescola_classe.php"/>
+      <file name="db_basefase_classe.php"                  path="/classes/db_basefase_classe.php"/>
+      <file name="db_ciclos_classe.php"                    path="/classes/db_ciclos_classe.php"/>
+      <file name="db_idadeetapa_classe.php"                path="/classes/db_idadeetapa_classe.php"/>
+      <file name="db_mobase_classe.php"                    path="/classes/db_mobase_classe.php"/>
+      <file name="db_redeorigem_classe.php"                path="/classes/db_redeorigem_classe.php"/>
+      <file name="db_tiporesp_classe.php"                  path="/classes/db_tiporesp_classe.php"/>
+      <file name="db_vagas_classe.php"                     path="/classes/db_vagas_classe.php"/>
+
+      <!-- Modification -->
+      <file name="MatriculaOnline.xml" path="/modification/xml/MatriculaOnline.xml"/>
+
+      <!-- Imagens -->
+      <file name="matricula_online.png" path="/matricula_online.png"/>
+    </files>
+
+    <modulos>
+      <modulo area-id="8" name="Matrícula On-line" imagem="matricula_online.png">
+        <menus>
+          <menu type="1">
+            <item name="Ciclos" file="" liberado-cliente="true">
+              <item name="Inclusão"  file="mol1_ciclos001.php" liberado-cliente="true"/>
+              <item name="Alteração" file="mol1_ciclos002.php" liberado-cliente="true"/>
+              <item name="Exclusão"  file="mol1_ciclos003.php" liberado-cliente="true"/>
+            </item>
+            <item name="Fases" file="" liberado-cliente="true">
+              <item name="Inclusão"  file="mol1_fase001.php" liberado-cliente="true"/>
+              <item name="Alteração" file="mol1_fase002.php" liberado-cliente="true"/>
+              <item name="Exclusão"  file="mol1_fase003.php" liberado-cliente="true"/>
+            </item>
+            <item name="Vagas"             file="mol1_vagas001.php" liberado-cliente="true"/>
+            <item name="Idade por Etapa"   file="mol1_idadeetapa001.php" liberado-cliente="true"/>
+            <item name="Escola por Bairro" file="mol1_escolaporbairro001.php" liberado-cliente="true"/>
+          </menu>
+          <menu type="3">
+            <item name="Designados"     file="mol2_designados001.php"    liberado-cliente="true"/>
+            <item name="Não Designados" file="mol2_naodesignados001.php" liberado-cliente="true"/>
+            <item name="Inscritos"      file="mol2_inscritos001.php"     liberado-cliente="true"/>
+          </menu>
+          <menu type="4">
+            <item name="Ordenar Critérios de Designação" file="mol3_ordenarcriteriosdesignacao001.php" liberado-cliente="true"/>
+            <item name="Processar Designação"            file="mol3_processardesignacao001.php"        liberado-cliente="true"/>
+          </menu>
+        </menus>
+      </modulo>
+    </modulos>
+
+    <estrutura install="/install.sql" uninstall="/uninstall.sql"/>
+  </plugin>
+</manifest>

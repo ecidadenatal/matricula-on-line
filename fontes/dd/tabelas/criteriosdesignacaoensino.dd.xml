@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="yes" ?>
+<table name="plugins.criteriosdesignacaoensino" description="Criterios Designação Ensino" type="0">
+  <fields>
+    <field name="mo17_sequencial"
+           conteudo="int4"
+           description="Sequencial"
+           inivalue="0"
+           label="Sequencial"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Sequencial"
+           reference=""
+           ispk="t"
+           hassequence="t">
+      <sequence name="plugins.criteriosdesignacaoensino_mo17_sequencial_seq" ></sequence>
+    </field>
+    <field name="mo17_criteriosdesignacao"
+           conteudo="int4"
+           description="Criterios"
+           inivalue="0"
+           label="Criterios"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Criterios"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo17_ensino"
+           conteudo="int4"
+           description="Ensino"
+           inivalue="0"
+           label="Ensino"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Ensino"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo17_ordem"
+           conteudo="int4"
+           description="Ordem"
+           inivalue="0"
+           label="Ordem"
+           size="10"
+           null="t"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Ordem"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+  </fields>
+  <primarykey>
+    <fieldpk  name="mo17_sequencial"></fieldpk>
+  </primarykey>
+  <foreignkeys>
+    <foreignkey reference="plugins.criteriosdesignacao" inner='true'>
+      <fieldfk name="mo17_criteriosdesignacao" reference="mo16_sequencial" />
+    </foreignkey>
+    <foreignkey reference="ensino" inner='true'>
+      <fieldfk name="mo17_ensino" reference="ed10_i_codigo" />
+    </foreignkey>
+  </foreignkeys>
+</table>

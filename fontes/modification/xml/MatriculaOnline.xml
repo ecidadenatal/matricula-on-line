@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+  <id>MatriculaOnline</id>
+  <name>MatriculaOnline</name>
+  <label>Matrícula Online</label>
+  <file path="func_escola.php">
+    <operation>
+      <search><![CDATA[/* PLUGIN MATRICULAONLINE - Chamada DAO cl_fase */]]></search>
+      <add position="after">
+        <![CDATA[
+          $oDaoFase = new cl_fase();
+        ]]>
+      </add>
+    </operation>
+    <operation>
+      <search><![CDATA[/* PLUGIN MATRICULAONLINE - Condição iFase */]]></search>
+      <add position="after">
+        <![CDATA[
+          } else if ( isset($sEnsino) && !empty($sEnsino) ) {
+            $sql = $oCrusoTurno->sql_query( "DISTINCT {$campos}", null, "ed29_i_ensino in ({$sEnsino})" );
+        ]]>
+      </add>
+    </operation>
+    <operation>
+      <search><![CDATA[/* PLUGIN MATRICULAONLINE - Condição iFase com pesquisa chave */]]></search>
+      <add position="after">
+        <![CDATA[
+          if ( isset( $iFase ) && !empty( $iFase ) ) {
+
+            $sWhere = "mo04_codigo = {$iFase} AND ed18_i_codigo = {$pesquisa_chave}";
+            $sSql   = $oDaoFase->sql_query_ensino_escola( "ed18_c_nome", null, $sWhere );
+          }
+        ]]>
+      </add>
+    </operation>
+  </file>
+</modification>

@@ -1,0 +1,65 @@
+<?xml version="1.0" standalone="yes" ?>
+<table name="plugins.ciclosensino" description="Tabela de ciclos de matrículas on-line." type="0">
+  <fields>
+    <field name="mo14_sequencial"
+           conteudo="int4"
+           description="Sequencial"
+           inivalue="0"
+           label="Sequencial"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="mo14_sequencial"
+           reference=""
+           ispk="t"
+           hassequence="t">
+      <sequence name="plugins.ciclosensino_mo14_sequencial_seq" ></sequence>
+    </field>
+    <field name="mo14_ciclo"
+           conteudo="int4"
+           description="Código do ciclo"
+           inivalue="0"
+           label="Ciclo"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="mo14_ciclo"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo14_ensino"
+           conteudo="int4"
+           description="Código do ensino vinculado ao ciclo."
+           inivalue="0"
+           label="Ensino"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="mo14_ensino"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+  </fields>
+  <primarykey>
+    <fieldpk  name="mo09_codigo"></fieldpk>
+  </primarykey>
+  <foreignkeys>
+    <foreignkey reference="plugins.ciclos" inner='true'>
+      <fieldfk name="mo14_ciclo" reference="mo09_codigo"></fieldfk>
+    </foreignkey>
+    <foreignkey reference="ensino" inner='true'>
+      <fieldfk name="mo14_ensino" reference="ed10_i_codigo"></fieldfk>
+    </foreignkey>
+  </foreignkeys>
+</table>

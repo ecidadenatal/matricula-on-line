@@ -1,0 +1,65 @@
+<?xml version="1.0" standalone="yes" ?>
+<table name="plugins.escbairro" description="Bairros que a escola atende" type="0">
+  <fields>
+    <field name="mo08_codigo"
+           conteudo="int4"
+           description="Código"
+           inivalue="0"
+           label="Código"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Código"
+           reference=""
+           ispk="t"
+           hassequence="t">
+      <sequence name="plugins.escbairro_mo08_codigo_seq" ></sequence>
+    </field>
+    <field name="mo08_escola"
+           conteudo="int4"
+           description="Escola"
+           inivalue="0"
+           label="Escola"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Escola"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo08_bairro"
+           conteudo="int4"
+           description="Bairro"
+           inivalue="0"
+           label="Bairro"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Bairro"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+  </fields>
+  <primarykey>
+    <fieldpk  name="mo08_codigo"></fieldpk>
+  </primarykey>
+  <foreignkeys>
+    <foreignkey reference="escola" inner='true'>
+      <fieldfk name="mo08_escola" reference="ed18_i_codigo" />
+    </foreignkey>
+    <foreignkey reference="bairro" inner='true'>
+      <fieldfk name="mo08_bairro" reference="j13_codi" />
+    </foreignkey>
+  </foreignkeys>
+</table>

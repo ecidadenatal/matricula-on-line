@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="yes" ?>
+<table name="plugins.basenecess" description="Tabela de vínculo entre mobase e a necessidade." type="0">
+  <fields>
+    <field name="mo11_codigo"
+           conteudo="int4"
+           description="Código"
+           inivalue="0"
+           label="Código"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="mo11_codigo"
+           reference=""
+           ispk="t"
+           hassequence="t">
+      <sequence name="plugins.basenecess_mo11_codigo_seq" ></sequence>
+    </field>
+    <field name="mo11_base"
+           conteudo="int4"
+           description="Cadastro base da matrícula online"
+           inivalue="0"
+           label="Candidato"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="mo11_base"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo11_necess"
+           conteudo="int4"
+           description="Necessidade especial de um 'Candidato' (quem solicitou matrícula) possui."
+           inivalue="0"
+           label="Necessidade"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="mo11_necess"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo11_status"
+           conteudo="bool"
+           description="Status"
+           inivalue="0"
+           label="Status"
+           size="1"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="5"
+           tipoobj="text"
+           labelrel="mo11_status"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+  </fields>
+  <primarykey>
+    <fieldpk  name="mo11_codigo"></fieldpk>
+  </primarykey>
+  <foreignkeys>
+    <foreignkey reference="plugins.mobase" inner='true'>
+      <fieldfk name="mo11_base" reference="mo01_codigo"></fieldfk>
+    </foreignkey>
+    <foreignkey reference="necessidade" inner='true'>
+      <fieldfk name="mo11_necess" reference="ed48_i_codigo"></fieldfk>
+    </foreignkey>
+  </foreignkeys>
+</table>

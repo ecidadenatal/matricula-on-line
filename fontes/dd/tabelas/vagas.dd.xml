@@ -1,0 +1,154 @@
+<?xml version="1.0" standalone="yes" ?>
+<table name="plugins.vagas" description="Vagas" type="0">
+  <fields>
+    <field name="mo10_codigo"
+           conteudo="int4"
+           description="Sequencial"
+           inivalue="0"
+           label="Sequencial"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Sequencial"
+           reference=""
+           ispk="t"
+           hassequence="t">
+      <sequence name="plugins.vagas_mo10_codigo_seq" ></sequence>
+    </field>
+    <field name="mo10_fase"
+           conteudo="int8"
+           description="Fase"
+           inivalue="0"
+           label="Fase"
+           size="10"
+           null="t"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Fase"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo10_escola"
+           conteudo="int8"
+           description="Escola"
+           inivalue="0"
+           label="Escola"
+           size="10"
+           null="t"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Escola"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo10_ensino"
+           conteudo="int8"
+           description="Ensino"
+           inivalue="0"
+           label="Ensino"
+           size="10"
+           null="t"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Ensino"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo10_serie"
+           conteudo="int8"
+           description="Etapa"
+           inivalue="0"
+           label="Etapa"
+           size="10"
+           null="t"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Etapa"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo10_turno"
+           conteudo="int8"
+           description="Turno"
+           inivalue="0"
+           label="Turno"
+           size="10"
+           null="t"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Turno"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo10_numvagas"
+           conteudo="int4"
+           description="Número de Vagas"
+           inivalue="0"
+           label="Número de Vagas"
+           size="10"
+           null="t"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Número de Vagas"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo10_saldovagas"
+           conteudo="int4"
+           description="Saldo de Vagas"
+           inivalue="0"
+           label="Saldo de Vagas"
+           size="10"
+           null="t"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Saldo de Vagas"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+  </fields>
+  <primarykey>
+    <fieldpk  name="mo10_codigo"></fieldpk>
+  </primarykey>
+  <foreignkeys>
+    <foreignkey reference="plugins.fase" inner='false'>
+      <fieldfk name="mo10_fase" reference="mo04_codigo" />
+    </foreignkey>
+    <foreignkey reference="escola" inner='false'>
+      <fieldfk name="mo10_escola" reference="ed18_i_codigo" />
+    </foreignkey>
+    <foreignkey reference="turno" inner='false'>
+      <fieldfk name="mo10_turno" reference="ed15_i_codigo" />
+    </foreignkey>
+    <foreignkey reference="ensino" inner='false'>
+      <fieldfk name="mo10_ensino" reference="ed10_i_codigo" />
+    </foreignkey>
+    <foreignkey reference="serie" inner='false'>
+      <fieldfk name="mo10_serie" reference="ed11_i_codigo" />
+    </foreignkey>
+  </foreignkeys>
+</table>

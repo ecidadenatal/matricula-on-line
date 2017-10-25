@@ -1,0 +1,84 @@
+<?xml version="1.0" standalone="yes" ?>
+<table name="plugins.alocados" description="Alunos que foram alocados para as escolas escolhidas." type="0">
+  <fields>
+    <field name="mo13_codigo"
+           conteudo="int4"
+           description="Sequencial"
+           inivalue="0"
+           label="Sequencial"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Sequencial"
+           reference=""
+           ispk="t"
+           hassequence="t">
+      <sequence name="plugins.alocados_mo13_codigo_seq" ></sequence>
+    </field>
+    <field name="mo13_base"
+           conteudo="int4"
+           description="Vínculo da base (Matrícula do Aluno)"
+           inivalue="0"
+           label="Base"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Base"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo13_fase"
+           conteudo="int4"
+           description="Vínculo com a Fase."
+           inivalue="0"
+           label="Fase"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Fase"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+    <field name="mo13_baseescturno"
+           conteudo="int4"
+           description="Vínculo da base com o a escola e seu turno."
+           inivalue="0"
+           label="Base Escola Turno"
+           size="10"
+           null="f"
+           uppercase="f"
+           autocompl="f"
+           aceitatipo="1"
+           tipoobj="text"
+           labelrel="Base Escola Turno"
+           reference=""
+           ispk="f"
+           hassequence="f">
+    </field>
+  </fields>
+  <primarykey>
+    <fieldpk  name="mo03_codigo"></fieldpk>
+  </primarykey>
+  <foreignkeys>
+    <foreignkey reference="plugins.mobase" inner='true'>
+      <fieldfk name="mo13_base" reference="mo01_codigo" />
+    </foreignkey>
+    <foreignkey reference="plugins.fase" inner='true'>
+      <fieldfk name="mo13_fase" reference="mo04_codigo" />
+    </foreignkey>
+    <foreignkey reference="plugins.baseescturno" inner='true'>
+      <fieldfk name="mo13_baseescturno" reference="mo03_codigo" />
+    </foreignkey>
+  </foreignkeys>
+</table>
